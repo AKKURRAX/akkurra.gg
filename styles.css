@@ -1,0 +1,287 @@
+body {
+    background-color: #1d1e20;
+}
+
+.logo {
+    height: 200px;
+    border-radius: 130px;
+    margin-top: 190px;
+}
+
+.title {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: whitesmoke;
+    font-size: xx-large;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+}
+
+.twitter {
+    height: 40px;
+}
+
+.github {
+    height: 40px;
+}
+
+.email {
+    height: 40px;
+    
+}
+
+.items {
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: calc(var(--nav-width) + var(--gap) * 2);
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    line-height: var(--header-height);
+    background-color: transparent;
+}
+
+.nav-logo {
+    height: 100px;
+    border-radius: 50px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #1d1e20;
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    display: inline;
+    float: left;
+    display: flex;
+}
+
+a {
+    display: block;
+    padding: 8px;
+    color: #dddddd;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pres {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    margin-top: 200px;
+}
+
+#discordInvite {
+    text-align: left;
+    box-sizing: border-box;
+    color: #fff;
+    background: rgba(19, 19, 19, 0.6);
+    border: 1px solid rgba(19, 19, 19, 0.9);
+    border-radius: 3px;
+    font: normal normal 400 normal 16px/16px Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: 0;
+    padding: 10px 15px 10px 10px;
+    display: inline-block;
+    max-width: 100vw;
+    box-shadow: 0 0 3px #131313;
+}
+
+#introText {
+    color: #b9bbbe;
+    height: 16px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    flex: 1 1 0%;
+    font: normal normal 600 normal 12px/16px Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: 0 0 8px;
+}
+
+#buttonText, #introText, #serverNameBox, #status {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#serverImg {
+    background-position: 50% 50%;
+    bottom: 0;
+    cursor: pointer;
+    height: 50px;
+    left: 0;
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 50px;
+    border-radius: 15px;
+    flex: 0 0 auto;
+    margin: 0 10px 0 0;
+}
+
+#callToAction, #callToAction-clicked {
+    bottom: 0;
+    cursor: pointer;
+    height: 40px;
+    left: 0;
+    min-height: 32px;
+    min-width: 73px;
+    position: relative;
+    right: 0;
+    top: 0;
+    align-self: center;
+    margin: 0 0 0 10px;
+    padding: 2px 16px;
+}
+
+#statusIndicators {
+    justify-content: flex-start;
+}
+
+#status, #statusIndicators {
+    font: normal normal 600 normal 12px/16px Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #72767d;
+    height: 16px;
+}
+
+#callToAction, #statusIndicators {
+    align-items: center;
+    display: flex;
+}
+
+#callToAction {
+    color: #fff;
+    border: 0;
+    justify-content: center;
+    background: #43b581;
+    border-radius: 3px;
+    font: normal normal 500 normal 14px/20px Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    transition: background-color .17s ease 0s;
+}
+
+#discordInfo {
+    align-items: stretch;
+    justify-content: center;
+    flex: 1 1 auto;
+    flex-flow: column nowrap;
+}
+
+#discordData, #discordInfo {
+    display: flex;
+    height: 50px;
+}
+
+#offlineInd, #onlineInd {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    margin: 0 4px 0 0;
+    display: block;
+}
+
+#onlineInd {
+    color: #72767d;
+    column-rule-color: #72767d;
+    background: #43b581;
+    font: italic normal 600 normal 12px/16px Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#offlineInd {
+    color: #72767d;
+    background: #747f8d;
+    font: italic normal 600 normal 12px/16px Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#numOnline {
+    color: #72767d;
+    display: block;
+    height: 16px;
+    font: normal normal 600 normal 12px/16px Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: 0 8px 0 0;
+}
+
+#callToAction-clicked {
+    color: #dcddde;
+    display: flex;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    background: rgba(0,0,0,0);
+    border: 1px solid rgba(114,118,126,.298);
+    border-radius: 3px;
+    font: normal normal 500 normal 14px/20px Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    transition: color .17s ease 0s,background-color .17s ease 0s,border-color .17s ease 0s;
+}
+button, select {
+    text-transform: none;
+}
+
+#callToAction, #callToAction-clicked {
+    bottom: 0;
+    cursor: pointer;
+    height: 40px;
+    left: 0;
+    min-height: 32px;
+    min-width: 73px;
+    position: relative;
+    right: 0;
+    top: 0;
+    align-self: center;
+    margin: 0 0 0 10px;
+    padding: 2px 16px;
+}
+
+button {
+    appearance: auto;
+    --webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+    box-sizing: border-box;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+#discordInvite {
+    text-align: left;
+    box-sizing: border-box;
+    color: #fff;
+    background: rgba(19, 19, 19, 0.6);
+    border: 1px solid rgba(19, 19, 19, 0.9);
+    border-radius: 3px;
+    font: normal normal 400 normal 16px/16px Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: 0;
+    padding: 10px 15px 10px 10px;
+    display: inline-block;
+    max-width: 100vw;
+    box-shadow: 0 0 3px #131313;
+}
